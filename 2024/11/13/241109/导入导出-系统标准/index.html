@@ -1,0 +1,297 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>导入导出_系统标准 | 梦落芳华</title><meta name="author" content="beckoningcoco"><meta name="copyright" content="beckoningcoco"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="导出模板第一步，引入 导入导出组件 &#x2F;&#x2F;导包import ExcelOutput from &amp;#x27;src&#x2F;uap&#x2F;common&#x2F;components&#x2F;ExcelOutput&amp;#x27;;&#x2F;&#x2F;写在 render --&gt; return()里面&lt;ExcelOutput&amp;#123;...this.props&amp;#125;moduleName&#x3D;&amp;#x27;so&amp;#x27;&#x2F;&#x2F;模块名billT">
+<meta property="og:type" content="article">
+<meta property="og:title" content="导入导出_系统标准">
+<meta property="og:url" content="http://example.com/2024/11/13/241109/%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA-%E7%B3%BB%E7%BB%9F%E6%A0%87%E5%87%86/index.html">
+<meta property="og:site_name" content="梦落芳华">
+<meta property="og:description" content="导出模板第一步，引入 导入导出组件 &#x2F;&#x2F;导包import ExcelOutput from &amp;#x27;src&#x2F;uap&#x2F;common&#x2F;components&#x2F;ExcelOutput&amp;#x27;;&#x2F;&#x2F;写在 render --&gt; return()里面&lt;ExcelOutput&amp;#123;...this.props&amp;#125;moduleName&#x3D;&amp;#x27;so&amp;#x27;&#x2F;&#x2F;模块名billT">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img-for-blogs.oss-cn-beijing.aliyuncs.com/img-for-blogsEE240625%20(2).jpg">
+<meta property="article:published_time" content="2024-11-13T07:29:25.000Z">
+<meta property="article:modified_time" content="2024-11-13T09:14:08.637Z">
+<meta property="article:author" content="beckoningcoco">
+<meta property="article:tag" content="NCC开发">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-for-blogs.oss-cn-beijing.aliyuncs.com/img-for-blogsEE240625%20(2).jpg"><link rel="shortcut icon" href="/img/%E5%A4%B4%E5%83%8F.png"><link rel="canonical" href="http://example.com/2024/11/13/241109/%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA-%E7%B3%BB%E7%BB%9F%E6%A0%87%E5%87%86/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '导入导出_系统标准',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-11-13 17:14:08'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script><link rel="stylesheet" href="APlayer.min.css"><div id="aplayer"></div><script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js" async></script><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css"><link rel="stylesheet" href="/css/readPercent.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/%E5%A4%B4%E5%83%8F.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">57</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 影音</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 影视</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于作者</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://img-for-blogs.oss-cn-beijing.aliyuncs.com/img-for-blogsEE240625 (2).jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">梦落芳华</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 影音</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 影视</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于作者</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">导入导出_系统标准</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-11-13T07:29:25.000Z" title="发表于 2024-11-13 15:29:25">2024-11-13</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-11-13T09:14:08.637Z" title="更新于 2024-11-13 17:14:08">2024-11-13</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="导入导出_系统标准"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="导出模板"><a href="#导出模板" class="headerlink" title="导出模板"></a>导出模板</h1><h2 id="第一步，引入-导入导出组件"><a href="#第一步，引入-导入导出组件" class="headerlink" title="第一步，引入 导入导出组件"></a>第一步，引入 导入导出组件</h2><p><img src="/2024/11/13/241109/%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA-%E7%B3%BB%E7%BB%9F%E6%A0%87%E5%87%86/image-20241113153920912.png" alt="image-20241113153920912"></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//导包</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">ExcelOutput</span> <span class="keyword">from</span> <span class="string">&#x27;src/uap/common/components/ExcelOutput&#x27;</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//写在 render --&gt; return()里面</span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">ExcelOutput</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">&#123;<span class="attr">...this.props</span>&#125;</span></span></span><br><span class="line"><span class="tag"><span class="language-xml"><span class="attr">moduleName</span>=<span class="string">&#x27;so&#x27;</span>//<span class="attr">模块名</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml"><span class="attr">billType</span>=<span class="string">&#x27;30R&#x27;</span>//<span class="attr">单据类型</span>  <span class="attr">命名自定义</span>，<span class="attr">但要与xml配置文件名一致</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml"><span class="attr">selectedPKS</span>=<span class="string">&#123;[]&#125;</span> //<span class="attr">若只做导入</span>，<span class="attr">此处为空数组即可</span>，<span class="attr">若是导出数据需放入主键数组</span> <span class="attr">this.state.pks</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml"><span class="attr">appcode</span>=<span class="string">&#x27;400600410&#x27;</span>  //<span class="attr">去应用注册里面找</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml"><span class="attr">pagecode</span>=<span class="string">&#x27;400600410_card&#x27;</span> //<span class="attr">去应用注册里面找</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">/&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/2024/11/13/241109/%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA-%E7%B3%BB%E7%BB%9F%E6%A0%87%E5%87%86/image-20241113154243875.png" alt="image-20241113154243875"></p>
+<p><img src="/2024/11/13/241109/%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA-%E7%B3%BB%E7%BB%9F%E6%A0%87%E5%87%86/image-20241113154311786.png" alt="image-20241113154311786"></p>
+<h2 id="第二步，添加按钮"><a href="#第二步，添加按钮" class="headerlink" title="第二步，添加按钮"></a>第二步，添加按钮</h2><p><img src="/2024/11/13/241109/%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA-%E7%B3%BB%E7%BB%9F%E6%A0%87%E5%87%86/image-20241113154720943.png" alt="image-20241113154720943"></p>
+<p><strong>前台效果:</strong></p>
+<p><img src="/2024/11/13/241109/%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA-%E7%B3%BB%E7%BB%9F%E6%A0%87%E5%87%86/image-20241113154742382.png" alt="image-20241113154742382"></p>
+<h2 id="第三步，打开前端代码，新增按钮事件"><a href="#第三步，打开前端代码，新增按钮事件" class="headerlink" title="第三步，打开前端代码，新增按钮事件"></a>第三步，打开前端代码，新增按钮事件</h2><p><img src="/2024/11/13/241109/%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA-%E7%B3%BB%E7%BB%9F%E6%A0%87%E5%87%86/image-20241113154859761.png" alt="image-20241113154859761"></p>
+<p><strong>注意:这里需要添加导出的 事件就可以，导入的话，引入的组件能够实现完整功能。</strong></p>
+<h2 id="第四步，修改xml配置文件"><a href="#第四步，修改xml配置文件" class="headerlink" title="第四步，修改xml配置文件"></a>第四步，修改xml配置文件</h2><ul>
+<li><p><strong>找到你的单据类型的xml文件，没有就复制个别的，然后修改！</strong></p>
+</li>
+<li><p><strong>路径: home\resources\excel\billdefine\模块名\xxx.xml</strong></p>
+</li>
+</ul>
+<p><img src="/2024/11/13/241109/%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA-%E7%B3%BB%E7%BB%9F%E6%A0%87%E5%87%86/image-20241113160556490.png" alt="image-20241113160556490"></p>
+<p><img src="/2024/11/13/241109/%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA-%E7%B3%BB%E7%BB%9F%E6%A0%87%E5%87%86/image-20241113161329716.png" alt="image-20241113161329716"></p>
+<ul>
+<li><strong>注意：里面有个 areaname 属性的填法  找到页面模板，然后点一下页签，就会显示区域编码</strong></li>
+<li><img src="/2024/11/13/241109/%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA-%E7%B3%BB%E7%BB%9F%E6%A0%87%E5%87%86/image-20241113161519022.png" alt="image-20241113161519022"></li>
+</ul>
+<h2 id="导出模板功能到此完成"><a href="#导出模板功能到此完成" class="headerlink" title="导出模板功能到此完成"></a>导出模板功能到此完成</h2><p><img src="/2024/11/13/241109/%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA-%E7%B3%BB%E7%BB%9F%E6%A0%87%E5%87%86/image-20241113164527190.png" alt="image-20241113164527190"></p>
+<hr>
+<h1 id="导入"><a href="#导入" class="headerlink" title="导入"></a>导入</h1><h2 id="第一步-引入导入组件-和导出是重复的"><a href="#第一步-引入导入组件-和导出是重复的" class="headerlink" title="第一步 引入导入组件(和导出是重复的)"></a>第一步 引入导入组件(和导出是重复的)</h2><p>参考 导出模板   第一步</p>
+<h2 id="第二步-添加按钮，参考导出模板"><a href="#第二步-添加按钮，参考导出模板" class="headerlink" title="第二步  添加按钮，参考导出模板"></a>第二步  添加按钮，参考导出模板</h2><h2 id="第三步修改-前端-initTemplate-js"><a href="#第三步修改-前端-initTemplate-js" class="headerlink" title="第三步修改 前端 initTemplate.js"></a>第三步修改 前端 initTemplate.js</h2><ul>
+<li>找到初始化模板这里</li>
+</ul>
+<p><img src="/2024/11/13/241109/%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA-%E7%B3%BB%E7%BB%9F%E6%A0%87%E5%87%86/image-20241113165511116.png" alt="image-20241113165511116"></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*pmFWCFu5nhKkBzYmrkBakbSX2Qf6kzsUGzh12pSKVZMF83dmm5yL09Q7Cq11rz7U*/</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @Author: wangceb </span></span><br><span class="line"><span class="comment"> * @PageInfo: 列表初始化模板</span></span><br><span class="line"><span class="comment"> * @Date: 2018-04-19 10:32:11 </span></span><br><span class="line"><span class="comment"> * @Last Modified by: wangpju</span></span><br><span class="line"><span class="comment"> * @Last Modified time: 2021-09-02 13:31:34</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">import</span> &#123; base, ajax &#125; <span class="keyword">from</span> <span class="string">&#x27;nc-lightapp-front&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; <span class="variable constant_">SALEORDERREVISE_CONST</span>, <span class="title class_">SaleOrderReviseHeadItem</span> &#125; <span class="keyword">from</span> <span class="string">&#x27;../../const&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> initListRowButtons <span class="keyword">from</span> <span class="string">&#x27;./initListRowButtons&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; btn_Controller &#125; <span class="keyword">from</span> <span class="string">&#x27;../btnClicks&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; referEvent &#125; <span class="keyword">from</span> <span class="string">&#x27;../events&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> excelImportconfig <span class="keyword">from</span> <span class="string">&quot;src/uap/common/components/excelImportconfig&quot;</span></span><br><span class="line"><span class="keyword">import</span> &#123; transtypeUtils &#125; <span class="keyword">from</span> <span class="string">&#x27;../../../../../scmpub/scmpub/pub/tool&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; initLang, getLangByResId &#125; <span class="keyword">from</span> <span class="string">&#x27;../../../../../scmpub/scmpub/pub/tool/multiLangUtil&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> head = <span class="variable constant_">SALEORDERREVISE_CONST</span>.<span class="property">formId</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">function</span>(<span class="params">props</span>) &#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//导入功能新增部分  ----------------</span></span><br><span class="line">	<span class="comment">// add by zht 单据类型命名自定义，但要与xml配置文件名一致    </span></span><br><span class="line">    <span class="comment">// 这里也是 前台向 后台传参数的地方，想要自定义参数，就在这里加就行！</span></span><br><span class="line">    <span class="keyword">let</span> excelimportconfig = <span class="title function_">excelImportconfig</span>(props,<span class="string">&#x27;so&#x27;</span>,<span class="string">&#x27;30R&#x27;</span>,<span class="literal">true</span>,<span class="string">&#x27;&#x27;</span>,&#123;</span><br><span class="line">		<span class="comment">// isbatch: &#x27;Y&#x27;,</span></span><br><span class="line">        <span class="attr">appcode</span>: <span class="string">&#x27;400600410&#x27;</span>,         <span class="comment">//应用注册去找这两个参数</span></span><br><span class="line">        <span class="attr">pagecode</span>: <span class="string">&#x27;400600410_card&#x27;</span>&#125;,</span><br><span class="line">        <span class="comment">// ()=&gt;&#123;</span></span><br><span class="line">        <span class="comment">// this.getData();//导入完成后回调列表查询方法</span></span><br><span class="line">    <span class="comment">// &#125;</span></span><br><span class="line">    );</span><br><span class="line">   <span class="comment">//导入功能新增部分  ----------------</span></span><br><span class="line">	props.<span class="title function_">createUIDom</span>(</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="attr">pagecode</span>: <span class="variable constant_">SALEORDERREVISE_CONST</span>.<span class="property">listPageId</span> <span class="comment">//卡片页面编码</span></span><br><span class="line">		&#125;,</span><br><span class="line">		<span class="function">(<span class="params">data</span>) =&gt;</span> &#123;</span><br><span class="line">			<span class="keyword">if</span> (data) &#123;</span><br><span class="line">				transtypeUtils.<span class="property">init</span>.<span class="title function_">call</span>(<span class="variable language_">this</span>, data.<span class="property">context</span>);</span><br><span class="line">				<span class="keyword">if</span> (data.<span class="property">button</span>) &#123;</span><br><span class="line">					<span class="keyword">let</span> button = data.<span class="property">button</span>;</span><br><span class="line">                     <span class="comment">//导入功能新增部分  ----------------</span></span><br><span class="line">                    <span class="comment">//  add by zht 导入功能</span></span><br><span class="line">					props.<span class="property">button</span>.<span class="title function_">setUploadConfig</span>(<span class="string">&quot;Import&quot;</span>,excelimportconfig); <span class="comment">// &quot;Import&quot; 是按钮的名字</span></span><br><span class="line">					props.<span class="property">button</span>.<span class="title function_">setButtons</span>(button);</span><br><span class="line">                     <span class="comment">//导入功能新增部分  ----------------</span></span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">if</span> (data.<span class="property">template</span>) &#123;</span><br><span class="line">					<span class="keyword">let</span> meta = data.<span class="property">template</span>;</span><br><span class="line">					modifierMeta.<span class="title function_">bind</span>(<span class="variable language_">this</span>)(props, meta);</span><br><span class="line">					transtypeUtils.<span class="property">initQuery</span>.<span class="title function_">call</span>(</span><br><span class="line">						<span class="variable language_">this</span>,</span><br><span class="line">						props,</span><br><span class="line">						meta,</span><br><span class="line">						<span class="variable constant_">SALEORDERREVISE_CONST</span>.<span class="property">searchId</span>,</span><br><span class="line">						<span class="title class_">SaleOrderReviseHeadItem</span>.<span class="property">CHISTRANTYPEID</span></span><br><span class="line">					);</span><br><span class="line">					props.<span class="property">meta</span>.<span class="title function_">setMeta</span>(meta, btn_Controller.<span class="title function_">bind</span>(<span class="variable language_">this</span>, <span class="variable language_">this</span>.<span class="property">props</span>));</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">modifierMeta</span>(<span class="params">props, meta</span>) &#123;</span><br><span class="line">	referEvent.<span class="title function_">call</span>(<span class="variable language_">this</span>, props, meta);</span><br><span class="line">	meta[head].<span class="property">items</span> = meta[head].<span class="property">items</span>.<span class="title function_">map</span>(<span class="function">(<span class="params">item, key</span>) =&gt;</span> &#123;</span><br><span class="line">		<span class="keyword">if</span> (item.<span class="property">attrcode</span> == <span class="string">&#x27;vbillcode&#x27;</span>) &#123;</span><br><span class="line">			item.<span class="property">render</span> = <span class="function">(<span class="params">text, record, index</span>) =&gt;</span> &#123;</span><br><span class="line">				<span class="keyword">return</span> (</span><br><span class="line">					<span class="language-xml"><span class="tag">&lt;<span class="name">a</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">						<span class="attr">style</span>=<span class="string">&#123;&#123;</span> <span class="attr">cursor:</span> &#x27;<span class="attr">pointer</span>&#x27; &#125;&#125;</span></span></span><br><span class="line"><span class="tag"><span class="language-xml">						<span class="attr">onClick</span>=<span class="string">&#123;()</span> =&gt;</span> &#123;</span></span><br><span class="line"><span class="language-xml">							props.pushTo(SALEORDERREVISE_CONST.Card_URL, &#123;</span></span><br><span class="line"><span class="language-xml">								pagecode: SALEORDERREVISE_CONST.cardPageId,</span></span><br><span class="line"><span class="language-xml">								status: SALEORDERREVISE_CONST.browse,</span></span><br><span class="line"><span class="language-xml">								id: ((record || &#123;&#125;).csaleorderid || &#123;&#125;).value</span></span><br><span class="line"><span class="language-xml">							&#125;);</span></span><br><span class="line"><span class="language-xml">						&#125;&#125;</span></span><br><span class="line"><span class="language-xml">					&gt;</span></span><br><span class="line"><span class="language-xml">						&#123;((record || &#123;&#125;).vbillcode || &#123;&#125;).value&#125;</span></span><br><span class="line"><span class="language-xml">					<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line">				);</span><br><span class="line">			&#125;;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> item;</span><br><span class="line">	&#125;);</span><br><span class="line">	<span class="keyword">let</span> porCol = &#123;</span><br><span class="line">		<span class="attr">attrcode</span>: <span class="string">&#x27;opr&#x27;</span>,</span><br><span class="line">		<span class="attr">label</span>: <span class="title function_">getLangByResId</span>(<span class="variable language_">this</span>, <span class="string">&#x27;4006SALEORDERREVISE-000020&#x27;</span>) <span class="comment">/* 国际化处理： 操作*/</span>,</span><br><span class="line">		<span class="attr">visible</span>: <span class="literal">true</span>,</span><br><span class="line">		<span class="attr">width</span>: <span class="number">150</span>,</span><br><span class="line">		<span class="attr">fixed</span>: <span class="string">&#x27;right&#x27;</span>,</span><br><span class="line">		<span class="attr">itemtype</span>: <span class="string">&#x27;customer&#x27;</span>,</span><br><span class="line"></span><br><span class="line">		<span class="attr">render</span>: <span class="function">(<span class="params">text, record, index</span>) =&gt;</span> &#123;</span><br><span class="line">			<span class="keyword">return</span> initListRowButtons.<span class="title function_">bind</span>(<span class="variable language_">this</span>, props, text, record, index)();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;;</span><br><span class="line">	meta[head].<span class="property">items</span>.<span class="title function_">push</span>(porCol);</span><br><span class="line">	<span class="keyword">return</span> meta;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*pmFWCFu5nhKkBzYmrkBakbSX2Qf6kzsUGzh12pSKVZMF83dmm5yL09Q7Cq11rz7U*/</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="第四步-编写后端代码"><a href="#第四步-编写后端代码" class="headerlink" title="第四步 编写后端代码"></a>第四步 编写后端代码</h2><h3 id="第一步-写一个处理类"><a href="#第一步-写一个处理类" class="headerlink" title="第一步 写一个处理类"></a>第一步 写一个处理类</h3><ul>
+<li><p>写一个处理类  SaleOrderHistoryImportProcess  继承 AbstractImportProcess</p>
+</li>
+<li><pre><code class="java"> package nccloud.so.so.plugin;
+import nc.hk.bs.lmsaleorder.revisesave.SaleOrderSingleReviseSaveHandler;
+import nc.vo.pub.BusinessException;
+import nc.vo.so.m30.revise.entity.SaleOrderHistoryVO;
+import nccloud.bs.excel.plugin.AbstractImportProcess;
+
+public class SaleOrderHistoryImportProcess extends AbstractImportProcess &#123;
+    private SaleOrderSingleReviseSaveHandler handler;
+
+    @Override
+    protected void processBill(Object vo) throws BusinessException &#123;
+        try &#123;
+            SaleOrderHistoryVO myAggvo = (SaleOrderHistoryVO) vo;
+            getHandler().processBatchModify(myAggvo); //我们自己的业务逻辑  校验，保存
+        &#125; catch (Exception e) &#123;
+            throw new BusinessException(&amp;quot;生成销售订单出错，请检查数据:&amp;quot; + e.getMessage());
+        &#125;
+    &#125;
+
+    private SaleOrderSingleReviseSaveHandler getHandler() &#123;
+        if (handler == null) &#123;
+            handler = new SaleOrderSingleReviseSaveHandler();
+        &#125;
+        return handler;
+    &#125;
+
+&#125;
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">### 第二步，去数据库注册为导入处理类</span><br><span class="line"></span><br><span class="line">```sql</span><br><span class="line">INSERT INTO EXCEL_BILLPROCESS (&quot;BASECLASSNAME&quot;, &quot;BILLTYPE&quot;, &quot;MODULE&quot;, &quot;PK_PROCESS&quot;, &quot;PRANAME&quot;, &quot;PROCLASSNAME&quot;, &quot;TS&quot;) VALUES (&#x27;nc.vo.so.m30.revise.entity.SaleOrderHistoryVO&#x27;, &#x27;30R&#x27;, &#x27;SO&#x27;, &#x27;000DR300000000SLOD31&#x27;, &#x27;销售订单修订导入&#x27;, &#x27;nccloud.so.so.plugin.SaleOrderHistoryImportProcess&#x27;, &#x27;2024-11-11 11:00:00&#x27;);</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+<li><p>‘nc.vo.so.m30.revise.entity.SaleOrderHistoryVO’  Aggvo全类名 ，自己替换</p>
+</li>
+<li><p>‘30R’ 单据类型 ，不是交易类型</p>
+</li>
+<li><p>‘SO’ 模块名</p>
+</li>
+<li><p>‘000DR300000000SLOD31’ 主键，自己修改一下</p>
+</li>
+<li><p>‘销售订单修订导入’  名称 – 随意</p>
+</li>
+<li><p>‘nccloud.so.so.plugin.SaleOrderHistoryImportProcess’ ， 我们刚才自己新建的  处理类的 全类名 </p>
+</li>
+<li><p>‘2024-11-11 11:00:00’ TS 时间戳</p>
+</li>
+</ul>
+<h3 id="结束-一般到这里-前台点击导入，选择一个模板，就能正常进入到我们的自己的处理类里面，如果不行，可能需要调整-对应的-XML配置文件"><a href="#结束-一般到这里-前台点击导入，选择一个模板，就能正常进入到我们的自己的处理类里面，如果不行，可能需要调整-对应的-XML配置文件" class="headerlink" title="结束  一般到这里 前台点击导入，选择一个模板，就能正常进入到我们的自己的处理类里面，如果不行，可能需要调整   对应的 XML配置文件"></a>结束  一般到这里 前台点击导入，选择一个模板，就能正常进入到我们的自己的处理类里面，如果不行，可能需要调整   对应的 XML配置文件</h3><h3 id="配置文件修改，无需重启服务，刷新页面即可。"><a href="#配置文件修改，无需重启服务，刷新页面即可。" class="headerlink" title="配置文件修改，无需重启服务，刷新页面即可。"></a>配置文件修改，无需重启服务，刷新页面即可。</h3></article><div class="post-copyright"><div class="post-copyright__title"><span class="post-copyright-info"><h>导入导出_系统标准</h></span></div><div class="post-copyright__type"><span class="post-copyright-info"><a href="http://example.com/2024/11/13/241109/%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA-%E7%B3%BB%E7%BB%9F%E6%A0%87%E5%87%86/">http://example.com/2024/11/13/241109/导入导出-系统标准/</a></span></div><div class="post-copyright-m"><div class="post-copyright-m-info"><div class="post-copyright-a"><h>作者</h><div class="post-copyright-cc-info"><h>beckoningcoco</h></div></div><div class="post-copyright-c"><h>发布于</h><div class="post-copyright-cc-info"><h>2024-11-13</h></div></div><div class="post-copyright-u"><h>更新于</h><div class="post-copyright-cc-info"><h>2024-11-13</h></div></div><div class="post-copyright-c"><h>许可协议</h><div class="post-copyright-cc-info"><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></div></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/NCC%E5%BC%80%E5%8F%91/">NCC开发</a></div><div class="post_share"><div class="social-share" data-image="https://img-for-blogs.oss-cn-beijing.aliyuncs.com/img-for-blogsEE240625 (2).jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/11/15/241109/%E7%B3%BB%E7%BB%9F%E6%A0%87%E5%87%86%E6%9F%A5%E8%AF%A2%E7%89%A9%E6%96%99%E7%A8%8E%E7%8E%87%E6%96%B9%E6%B3%95/"><img class="prev-cover" src="https://img-for-blogs.oss-cn-beijing.aliyuncs.com/img-for-blogsEE240625 (3).png" onerror="onerror=null;src='/null'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">系统标准查询物料税率方法</div></div></a></div><div class="next-post pull-right"><a href="/2024/11/13/241109/tar-gz%E5%8E%8B%E7%BC%A9%E5%8C%85%E5%91%BD%E4%BB%A4/"><img class="next-cover" src="https://img-for-blogs.oss-cn-beijing.aliyuncs.com/img-for-blogsEE240625 (1).jpg" onerror="onerror=null;src='/null'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">windows系统解压tar.gz压缩包命令</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2024/06/25/240625/JSONString%E4%B8%8EJSONObject%E7%9B%B8%E4%BA%92%E8%BD%AC%E5%8C%96/" title="JSONString与JSONObject相互转化"><img class="cover" src="https://img-for-blogs.oss-cn-beijing.aliyuncs.com/img-for-blogsEE240625 (1).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-25</div><div class="title">JSONString与JSONObject相互转化</div></div></a></div><div><a href="/2024/06/25/240625/Linux%E6%89%93%E8%A1%A5%E4%B8%81%E6%96%B9%E6%B3%95/" title="Linux打补丁方法"><img class="cover" src="https://img-for-blogs.oss-cn-beijing.aliyuncs.com/img-for-blogsEE240625 (4).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-25</div><div class="title">Linux打补丁方法</div></div></a></div><div><a href="/2024/06/26/240625/SQL%E6%9F%A5%E8%AF%A2%E7%BB%93%E6%9E%9C%EF%BC%8C%E5%B0%86%E5%A4%9A%E8%A1%8C%E5%90%88%E5%B9%B61%E8%A1%8C%EF%BC%8C%E6%95%B0%E6%8D%AE%E4%BB%A5%E9%80%97%E5%8F%B7%E5%88%86%E9%9A%94/" title="SQL查询结果，将多行合并1行，数据以逗号分隔"><img class="cover" src="https://img-for-blogs.oss-cn-beijing.aliyuncs.com/img-for-blogsEE240625 (11).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-26</div><div class="title">SQL查询结果，将多行合并1行，数据以逗号分隔</div></div></a></div><div><a href="/2024/06/25/240625/rest%E6%8E%A5%E5%8F%A3/" title="rest接口"><img class="cover" src="https://img-for-blogs.oss-cn-beijing.aliyuncs.com/img-for-blogsEE240625 (9).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-25</div><div class="title">rest接口</div></div></a></div><div><a href="/2024/06/27/240625/%E4%BB%A3%E7%A0%81%E4%BC%98%E5%8C%96-%E5%8D%95%E6%8D%AE%E9%AA%8C%E9%87%8D-%E9%98%B2%E6%AD%A2%E9%87%8D%E5%A4%8D%E6%8E%A8%E9%80%81%E5%8D%95%E6%8D%AE/" title="代码优化:单据验重&#x2F;防止重复推送单据"><img class="cover" src="https://img-for-blogs.oss-cn-beijing.aliyuncs.com/img-for-blogs0626 (2).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-27</div><div class="title">代码优化:单据验重&#x2F;防止重复推送单据</div></div></a></div><div><a href="/2024/06/27/240625/%E4%BB%A3%E7%A0%81%E4%BC%98%E5%8C%96-%E6%A0%A1%E9%AA%8C%E6%8A%A5%E6%96%87%E5%BF%85%E5%A1%AB%E5%AD%97%E6%AE%B5/" title="代码优化:校验报文必填字段"><img class="cover" src="https://img-for-blogs.oss-cn-beijing.aliyuncs.com/img-for-blogsEE240625 (12).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-27</div><div class="title">代码优化:校验报文必填字段</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/%E5%A4%B4%E5%83%8F.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">beckoningcoco</div><div class="author-info__description">世界好吵，让我帮你捂耳朵吧</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">57</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/beckoningcoco"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/beckoningcoco" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:995587764@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到我的blog！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AF%BC%E5%87%BA%E6%A8%A1%E6%9D%BF"><span class="toc-number">1.</span> <span class="toc-text">导出模板</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5%EF%BC%8C%E5%BC%95%E5%85%A5-%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA%E7%BB%84%E4%BB%B6"><span class="toc-number">1.1.</span> <span class="toc-text">第一步，引入 导入导出组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5%EF%BC%8C%E6%B7%BB%E5%8A%A0%E6%8C%89%E9%92%AE"><span class="toc-number">1.2.</span> <span class="toc-text">第二步，添加按钮</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5%EF%BC%8C%E6%89%93%E5%BC%80%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%EF%BC%8C%E6%96%B0%E5%A2%9E%E6%8C%89%E9%92%AE%E4%BA%8B%E4%BB%B6"><span class="toc-number">1.3.</span> <span class="toc-text">第三步，打开前端代码，新增按钮事件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E6%AD%A5%EF%BC%8C%E4%BF%AE%E6%94%B9xml%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">1.4.</span> <span class="toc-text">第四步，修改xml配置文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%BC%E5%87%BA%E6%A8%A1%E6%9D%BF%E5%8A%9F%E8%83%BD%E5%88%B0%E6%AD%A4%E5%AE%8C%E6%88%90"><span class="toc-number">1.5.</span> <span class="toc-text">导出模板功能到此完成</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AF%BC%E5%85%A5"><span class="toc-number">2.</span> <span class="toc-text">导入</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5-%E5%BC%95%E5%85%A5%E5%AF%BC%E5%85%A5%E7%BB%84%E4%BB%B6-%E5%92%8C%E5%AF%BC%E5%87%BA%E6%98%AF%E9%87%8D%E5%A4%8D%E7%9A%84"><span class="toc-number">2.1.</span> <span class="toc-text">第一步 引入导入组件(和导出是重复的)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5-%E6%B7%BB%E5%8A%A0%E6%8C%89%E9%92%AE%EF%BC%8C%E5%8F%82%E8%80%83%E5%AF%BC%E5%87%BA%E6%A8%A1%E6%9D%BF"><span class="toc-number">2.2.</span> <span class="toc-text">第二步  添加按钮，参考导出模板</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5%E4%BF%AE%E6%94%B9-%E5%89%8D%E7%AB%AF-initTemplate-js"><span class="toc-number">2.3.</span> <span class="toc-text">第三步修改 前端 initTemplate.js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E6%AD%A5-%E7%BC%96%E5%86%99%E5%90%8E%E7%AB%AF%E4%BB%A3%E7%A0%81"><span class="toc-number">2.4.</span> <span class="toc-text">第四步 编写后端代码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5-%E5%86%99%E4%B8%80%E4%B8%AA%E5%A4%84%E7%90%86%E7%B1%BB"><span class="toc-number">2.4.1.</span> <span class="toc-text">第一步 写一个处理类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%93%E6%9D%9F-%E4%B8%80%E8%88%AC%E5%88%B0%E8%BF%99%E9%87%8C-%E5%89%8D%E5%8F%B0%E7%82%B9%E5%87%BB%E5%AF%BC%E5%85%A5%EF%BC%8C%E9%80%89%E6%8B%A9%E4%B8%80%E4%B8%AA%E6%A8%A1%E6%9D%BF%EF%BC%8C%E5%B0%B1%E8%83%BD%E6%AD%A3%E5%B8%B8%E8%BF%9B%E5%85%A5%E5%88%B0%E6%88%91%E4%BB%AC%E7%9A%84%E8%87%AA%E5%B7%B1%E7%9A%84%E5%A4%84%E7%90%86%E7%B1%BB%E9%87%8C%E9%9D%A2%EF%BC%8C%E5%A6%82%E6%9E%9C%E4%B8%8D%E8%A1%8C%EF%BC%8C%E5%8F%AF%E8%83%BD%E9%9C%80%E8%A6%81%E8%B0%83%E6%95%B4-%E5%AF%B9%E5%BA%94%E7%9A%84-XML%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">2.4.2.</span> <span class="toc-text">结束  一般到这里 前台点击导入，选择一个模板，就能正常进入到我们的自己的处理类里面，如果不行，可能需要调整   对应的 XML配置文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%BF%AE%E6%94%B9%EF%BC%8C%E6%97%A0%E9%9C%80%E9%87%8D%E5%90%AF%E6%9C%8D%E5%8A%A1%EF%BC%8C%E5%88%B7%E6%96%B0%E9%A1%B5%E9%9D%A2%E5%8D%B3%E5%8F%AF%E3%80%82"><span class="toc-number">2.4.3.</span> <span class="toc-text">配置文件修改，无需重启服务，刷新页面即可。</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/11/21/spring241121/%E4%BD%BF%E7%94%A8Maven%E6%89%93%E5%8C%85jar%E5%8C%85/" title="使用Maven打包jar包"><img src="https://img-for-blogs.oss-cn-beijing.aliyuncs.com/img-for-blogs0626 (2).jpg" onerror="this.onerror=null;this.src='/null'" alt="使用Maven打包jar包"/></a><div class="content"><a class="title" href="/2024/11/21/spring241121/%E4%BD%BF%E7%94%A8Maven%E6%89%93%E5%8C%85jar%E5%8C%85/" title="使用Maven打包jar包">使用Maven打包jar包</a><time datetime="2024-11-21T11:38:43.000Z" title="发表于 2024-11-21 19:38:43">2024-11-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/11/21/javafx/%E5%88%9B%E5%BB%BA%E6%9C%80%E5%9F%BA%E7%A1%80%E7%9A%84JavaFX%E9%A1%B9%E7%9B%AE/" title="创建最基础的JavaFX项目"><img src="https://img-for-blogs.oss-cn-beijing.aliyuncs.com/img-for-blogsEE240625 (17).png" onerror="this.onerror=null;this.src='/null'" alt="创建最基础的JavaFX项目"/></a><div class="content"><a class="title" href="/2024/11/21/javafx/%E5%88%9B%E5%BB%BA%E6%9C%80%E5%9F%BA%E7%A1%80%E7%9A%84JavaFX%E9%A1%B9%E7%9B%AE/" title="创建最基础的JavaFX项目">创建最基础的JavaFX项目</a><time datetime="2024-11-21T07:06:34.000Z" title="发表于 2024-11-21 15:06:34">2024-11-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/11/21/spring241121/SpringBoot%E4%B8%AD%E5%8D%87%E7%BA%A7spring%E6%A1%86%E6%9E%B6%E7%9A%84%E7%89%88%E6%9C%AC/" title="SpringBoot中升级spring框架的版本"><img src="https://img-for-blogs.oss-cn-beijing.aliyuncs.com/img-for-blogsEE240625 (16).png" onerror="this.onerror=null;this.src='/null'" alt="SpringBoot中升级spring框架的版本"/></a><div class="content"><a class="title" href="/2024/11/21/spring241121/SpringBoot%E4%B8%AD%E5%8D%87%E7%BA%A7spring%E6%A1%86%E6%9E%B6%E7%9A%84%E7%89%88%E6%9C%AC/" title="SpringBoot中升级spring框架的版本">SpringBoot中升级spring框架的版本</a><time datetime="2024-11-21T02:30:54.000Z" title="发表于 2024-11-21 10:30:54">2024-11-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/11/19/241116/%E5%B0%86%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%8416%E8%BF%9B%E5%88%B6%E7%A0%81%E8%BD%AC%E6%88%90%E4%B8%AD%E6%96%87/" title="将字符串中的16进制码转成中文"><img src="https://img-for-blogs.oss-cn-beijing.aliyuncs.com/img-for-blogsEE240625 (15).png" onerror="this.onerror=null;this.src='/null'" alt="将字符串中的16进制码转成中文"/></a><div class="content"><a class="title" href="/2024/11/19/241116/%E5%B0%86%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%8416%E8%BF%9B%E5%88%B6%E7%A0%81%E8%BD%AC%E6%88%90%E4%B8%AD%E6%96%87/" title="将字符串中的16进制码转成中文">将字符串中的16进制码转成中文</a><time datetime="2024-11-19T12:51:04.000Z" title="发表于 2024-11-19 20:51:04">2024-11-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/11/19/241116/Linux%E6%89%B9%E9%87%8F%E6%9B%BF%E6%8D%A2%E7%9B%AE%E5%BD%95%E9%87%8C%E7%9A%84jar%E5%8C%85/" title="Linux批量替换目录里的jar包"><img src="https://img-for-blogs.oss-cn-beijing.aliyuncs.com/img-for-blogsEE240625 (12).jpg" onerror="this.onerror=null;this.src='/null'" alt="Linux批量替换目录里的jar包"/></a><div class="content"><a class="title" href="/2024/11/19/241116/Linux%E6%89%B9%E9%87%8F%E6%9B%BF%E6%8D%A2%E7%9B%AE%E5%BD%95%E9%87%8C%E7%9A%84jar%E5%8C%85/" title="Linux批量替换目录里的jar包">Linux批量替换目录里的jar包</a><time datetime="2024-11-19T11:12:00.000Z" title="发表于 2024-11-19 19:12:00">2024-11-19</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://img-for-blogs.oss-cn-beijing.aliyuncs.com/img-for-blogsEE240625 (2).jpg')"><div id="footer-wrap"><div class="copyright">&copy;2023 - 2024 By beckoningcoco</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">嘘声是给予挑战者的勋章——美浦波旁.<p><a target="_blank" href="https://hexo.io/"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo" title="博客框架为Hexo"></a>&nbsp;<a target="_blank" href="https://butterfly.js.org/"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender" title="主题采用butterfly"></a>&nbsp;<a target="_blank" href="https://www.jsdelivr.com/"><img src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr" title="本站使用JsDelivr为静态资源提供CDN加速"></a> &nbsp;<a target="_blank" href="https://vercel.com/ "><img src="https://img.shields.io/badge/Hosted-Vervel-brightgreen?style=flat&logo=Vercel" title="本站采用双线部署，默认线路托管于Vercel"></a>&nbsp;<a target="_blank" href="https://vercel.com/ "><img src="https://img.shields.io/badge/Hosted-Coding-0cedbe?style=flat&logo=Codio" title="本站采用双线部署，联通线路托管于Coding"></a>&nbsp;<a target="_blank" href="https://github.com/"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub" title="本站项目由Gtihub托管"></a>&nbsp;<a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"></a></p></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i><span id="percent">0<span>%</span></span></button><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script defer data-pjax src="/js/readPercent.js"></script><div class="aplayer no-destroy" data-id="8091029090" data-server="netease" data-type="playlist"  data-fixed="true" data-mini="true"  data-listmaxheight="340px" listfolded="true"  data-autoplay="true" data-theme="#3F51B5" > </div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
